@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estadistica</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header>
+        <h1>Estadística</h1>
+    </Header>
+    <main>
+        <section class="label_container">
+            <label class="top-left">Mesa</label>
+            <label class="top">Ganancia</label>
+            <label class="top">Perdida</label>
+            <label class="top-right">Caja de Empleados</label>
+
+            <label for="mesa1" class="left" id="lbl-mesa1"><input type="number" class="input-num" name="mesa1" id="mesa1" value="0" onclick="limpiarMesa1()"></label>
+            <label for="gan1" id="lbl-gan1"><input type="number" class="input-num" name="gan1" id="gan1" value="0" onclick="limpiarGan1()"></label>
+            <label for="per1" id="lbl-per1"><input type="number" class="input-num" name="per1" id="per1" value="0" onclick="limpiarPer1()"></label>
+            <label for="propi1" class="right" id="lbl-propi1"><input type="number" class="input-num" name="propi1" id="propi1" value="0" onclick="limpiarPropi1()"></label>
+
+            <label for="mesa2" class="left"id="lbl-mesa2"><input type="number" class="input-num" name="mesa2" id="mesa2" value="0" onclick="limpiarMesa2()"></label>
+            <label for="gan2" id="lbl-gan2"><input type="number" class="input-num" name="gan2" id="gan2" value="0" onclick="limpiarGan2()"></label>
+            <label for="per2" id="lbl-per2"><input type="number" class="input-num" name="per2" id="per2" value="0" onclick="limpiarPer2()"></label>
+            <label for="propi2" class="right" id="lbl-propi2"><input type="number" class="input-num" name="propi2" id="propi2" value="0" onclick="limpiarPropi2()"></label>
+
+            <label for="mesa3" class="left"id="lbl-mesa3"><input type="number" class="input-num" name="mesa3" id="mesa3" value="0" onclick="limpiarMesa3()"></label>
+            <label for="gan3" id="lbl-gan3"><input type="number" class="input-num" name="gan3" id="gan3" value="0" onclick="limpiarGan3()"></label>
+            <label for="per3" id="lbl-per3"><input type="number" class="input-num" name="per3" id="per3" value="0" onclick="limpiarPer3()"></label>
+            <label for="propi3" class="right" id="lbl-propi3"><input type="number" class="input-num" name="propi3" id="propi3" value="0" onclick="limpiarPropi3()"></label>
+
+            <label for="mesa4" class="left"id="lbl-mesa4"><input type="number" class="input-num" name="mesa4" id="mesa4" value="0" onclick="limpiarMesa4()"></label>
+            <label for="gan4" id="lbl-gan4"><input type="number" class="input-num" name="gan4" id="gan4" value="0" onclick="limpiarGan4()"></label>
+            <label for="per4" id="lbl-per4"><input type="number" class="input-num" name="per4" id="per4" value="0" onclick="limpiarPer4()"></label>
+            <label for="propi4" class="right" id="lbl-propi4"><input type="number" class="input-num" name="propi4" id="propi4" value="0" onclick="limpiarPropi4()"></label>
+
+            <label for="mesa5" class="left"id="lbl-mesa5"><input type="number" class="input-num" name="mesa5" id="mesa5" value="0" onclick="limpiarMesa5()"></label>
+            <label for="gan5" id="lbl-gan5"><input type="number" class="input-num" name="gan5" id="gan5" value="0" onclick="limpiarGan5()"></label>
+            <label for="per5" id="lbl-per5"><input type="number" class="input-num" name="per5" id="per5" value="0" onclick="limpiarPer5()"></label>
+            <label for="propi5" class="right" id="lbl-propi5"><input type="number" class="input-num" name="propi5" id="propi5" value="0" onclick="limpiarPropi5()"></label>
+
+            <label for="mesa6" class="left"id="lbl-mesa6"><input type="number" class="input-num" name="mesa6" id="mesa6" value="0" onclick="limpiarMesa6()"></label>
+            <label for="gan6" id="lbl-gan6"><input type="number" class="input-num" name="gan6" id="gan6" value="0" onclick="limpiarGan6()"></label>
+            <label for="per6" id="lbl-per6"><input type="number" class="input-num" name="per6" id="per6" value="0" onclick="limpiarPer6()"></label>
+            <label for="propi6" class="right" id="lbl-propi6"><input type="number" class="input-num" name="propi6" id="propi6" value="0" onclick="limpiarPropi6()"></label>
+
+            <label for="mesa7" class="left"id="lbl-mesa7"><input type="number" class="input-num" name="mesa7" id="mesa7" value="0" onclick="limpiarMesa7()"></label>
+            <label for="gan7" id="lbl-gan7"><input type="number" class="input-num" name="gan7" id="gan7" value="0" onclick="limpiarGan7()"></label>
+            <label for="per7" id="lbl-per7"><input type="number" class="input-num" name="per7" id="per7" value="0" onclick="limpiarPer7()"></label>
+            <label for="propi7" class="right" id="lbl-propi7"><input type="number" class="input-num" name="propi7" id="propi7" value="0" onclick="limpiarPropi7()"></label>
+
+            <label for="mesa8" class="left"id="lbl-mesa8"><input type="number" class="input-num" name="mesa8" id="mesa8" value="0" onclick="limpiarMesa8()"></label>
+            <label for="gan8" id="lbl-gan8"><input type="number" class="input-num" name="gan8" id="gan8" value="0" onclick="limpiarGan8()"></label>
+            <label for="per8" id="lbl-per8"><input type="number" class="input-num" name="per8" id="per8" value="0" onclick="limpiarPer8()"></label>
+            <label for="propi8" class="right" id="lbl-propi8"><input type="number" class="input-num" name="propi8" id="propi8" value="0" onclick="limpiarPropi8()"></label>
+
+            <label for="" class="bottom-left"></label>
+            <label for="" class="bottom"><button class="boton-total" onclick="calcularTotal()">Total:</button></label>
+            <label class="bottom" id="total_capital"></label>
+            <label for="" class="bottom-right" id="total_propi"></label>
+        </section>
+    </main>
+    <footer>
+        J.H.A.N.G
+    </footer>
+<script src="super.js"></script>
+</body>
+</html>

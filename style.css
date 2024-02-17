@@ -1,0 +1,119 @@
+:root {
+    --colorPrimario: #ddd;
+    --colorSecundario: #000;
+    --colorBoton: #ffda14;
+    --colorBoton2: #897400;
+    --colorBoton3: #cccccc;
+    --colorBoton4: #4c4c4c;
+    --colorBoton5: #d09156;
+    --colorBoton6: #3d2611;
+    --colorBackground: #207720;
+    --colorBackgroundGrad: #001400;
+    --colorLetras: #ffda14;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+    height: 100%;
+}
+body {
+    background-color: var(--colorBackground);
+    color: var(--colorPrimario);
+    min-height: 100%;
+    font-family:  'Baskervville', 'Libre Baskerville', serif;
+}
+
+/* HEADER */
+header {
+    margin-bottom: 3rem;
+    text-align: center;
+    background-image: linear-gradient(var(--colorBackgroundGrad), var(--colorBackground));
+}
+h1 {
+    font-size: 4rem;
+}
+/* MAIN */
+.label_container {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 2rem;
+}
+
+/* CUADRICULA */
+label {
+    padding: 1rem .5rem;
+    text-align: center;
+    border: 1px var(--colorPrimario) solid;
+    font-size: 2.5rem;
+}
+.top-left {
+    border-top: 5px var(--colorPrimario) solid;
+    border-left: 5px var(--colorPrimario) solid;
+    border-top-left-radius: 10px;
+}
+.top {
+    border-top: 5px var(--colorPrimario) solid;
+}
+.top-right {
+    border-top: 5px var(--colorPrimario) solid;
+    border-right: 5px var(--colorPrimario) solid;
+    border-top-right-radius: 10px;
+}
+.left{
+    border-left: 5px var(--colorPrimario) solid;
+}
+.right {
+    border-right: 5px var(--colorPrimario) solid;
+}
+.bottom {
+    border-bottom: 5px var(--colorPrimario) solid;
+}
+.bottom-left {
+    border-bottom: 5px var(--colorPrimario) solid;
+    border-left: 5px var(--colorPrimario) solid;
+    border-bottom-left-radius: 10px;
+}
+.bottom-right {
+    border-bottom: 5px var(--colorPrimario) solid;
+    border-right: 5px var(--colorPrimario) solid;
+    border-bottom-right-radius: 10px;
+}
+
+/* INPUT */
+.input-num{
+    max-width: 150px;
+    background-color: var(--colorBackground);
+    color: var(--colorPrimario);
+    font-family:  'Baskervville', 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    border: none;
+}
+
+/*  BOTON */
+.boton-total {
+    width: 150px;
+    padding: .5rem;
+    font-family:  'Baskervville', 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, var(--colorBoton3) 65%, var(--colorBoton4));
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    grid-area: footer;
+    background-image: linear-gradient(var(--colorBackground) 25%, var(--colorBackgroundGrad));
+    color: var(--colorPrimario);
+}
