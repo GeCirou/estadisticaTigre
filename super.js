@@ -1,3 +1,7 @@
+// var ganancia1 = 0;
+// var perdida1 =  0;
+// var propina1 =  0;
+
 var totalCapital = 0;
 document.getElementById("total_capital").innerHTML = totalCapital;
 var totalPropina = 0;
@@ -83,11 +87,6 @@ function limpiarPer8() {
 function limpiarPropi8() {
     propi8.value = "";
 }
-
-// VARIABLES
-var ganancia1 = 0;
-var perdida1 =  0;
-var propina1 =  0;
 
 // CALCULO TOTAL
 function calcularTotal() {

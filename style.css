@@ -38,9 +38,18 @@ h1 {
 .label_container {
     margin: 2rem auto;
     max-width: 800px;
+    font-size: 1.7rem;
+}
+.main-label {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.total-label {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 2.5rem;
 }
 
 /* CUADRICULA */
