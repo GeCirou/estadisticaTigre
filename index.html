@@ -10,10 +10,19 @@
 </head>
 <body>
     <Header>
-        <h1>Estadística</h1>
+        <h1>Estadística de Supervisores</h1>
     </Header>
     <main>
-        <section>
+        <div class="fecha_container">
+            <label class="fecha_label" for="fecha">Fecha: <input type="date" name="" id=""></label>
+        </div>
+        <section class="tabla_container">
+            <div class="label_container super-data">
+                <label for="hora" class="super-label super_left">Hora: <input type="time"></label>
+                <label for="sector" class="super-label">Sector: <input type="number"></label>
+                <label for="turno" class="super-label">Turno: <input type="number" id="turno"></label>
+                <label for="legajo" class="super-label super_right">Legajo: <input type="number" id="legajo"></label>
+            </div>
             <div class="label_container main-label">
                 <label class="top-left">Mesa</label>
                 <label class="top">Ganancia</label>
@@ -64,15 +73,20 @@
                 <label class="top-left">Total</label>
                 <label class="top">Capital:</label>
                 <label class="top-right">Propina:</label>
-                <label class="bottom-left"><button class="boton-total" onclick="calcularTotal()">Total:</button></label>
+                <label class="bottom-left total_bottom-left"><button class="boton-total" onclick="calcularTotal()">Total:</button></label>
                 <label class="bottom" id="total_capital"></label>
-                <label class="bottom-right" id="total_propi"></label>
+                <label class="bottom-right total_bottom-right" id="total_propi"></label>
             </div>
+        </section>
+        <section>
+            <label for="" id="historial"></label>
         </section>
     </main>
     <script src="super.js"></script>
     <footer>
-        J.H.A.N.G
+        <button class="boton-barra" onclick="guardar()">Guardar</button>
+        <button class="boton-barra">Borrar</button>
+        <button class="boton-barra">Historial</button>
     </footer>
 </body>
 </html>

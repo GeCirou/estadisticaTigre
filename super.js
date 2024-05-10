@@ -127,4 +127,29 @@ function calcularTotal() {
 
     document.getElementById("total_capital").innerHTML = totalCapital;
     document.getElementById("total_propi").innerHTML = totalPropina;
+
+    // document.getElementById("lbl-per1").innerHTML = perdida1;
 }
+
+// GUARDAR
+function guardar() {
+    let listaHistorial = [];
+    let nuevoDict = {
+        "Turno": document.getElementById("turno").value,
+        "Legajo": document.getElementById("legajo").value,
+        "Estado": document.getElementById("total_capital").value,
+        "Propina": document.getElementById("total_propi").value
+    };
+
+    listaHistorial = listaHistorial.push(nuevoDict["Turno"]);
+
+    document.getElementById("historial").innerHTML = listaHistorial;
+
+    alert(listaHistorial);
+}
+
+// BORRAR
+
+// function borrar() {
+    
+// }
